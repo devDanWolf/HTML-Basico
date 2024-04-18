@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>Formularios basicos en HTML5</title>
+    </head>
+
+    <body>
+
+        <h1><a href="index.html"><img src="img/Banner ADORAI.jpg" alt="Banner ADORAI" width="200" height="50"></a></h1>
+
+        <form>      <!--Se conoce como formulario a los mecanismos para enviar información por parte del usuario-->
+
+            <label>Edad</label>     <!--Es una etiqueta que nos deja ponerle nombre a los <input> -->
+            <input type="number" placeholder="Edad..." />   <!-- placeholder="" dentro de la etiqueta <input> sirve
+                                                            para dar una palabra, indicación en letra gris dentro
+                                                            del mismo <input>, esto hace que podamos dar instrucciones
+                                                            al usuario sobre que es exactamente lo que va allí. -->
+            <br/>
+            <label>Contraseña</label>
+            <input type="password" placeholder="Contraseña..."/>
+            <br/>
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre"/>
+            <br/>
+            <input type="color" list="items"/>  <!--Con esto creas un selector de colores-->
+            
+            <input type="submit" value="Aceptar"/>      <!--la etiqueta <input> es principalmente, la etiqueta HTML más
+                                        utilizada en formularios para obtener datos a través del usuario.-->
+            <br /><br />
+            <textarea></textarea>   <!-- <input> se nos puede quedar corta, asi que en caso de necessitar
+                                    que el usuario escriba textos extensos, lo mejor será usar esta etiqueta-->
+
+            <button>Aceptar</button>       <!--Es una etiqueta para hacer botones igual que <input type="submit"
+                                           la unica diferencia es que en <button> puedes añadir mas funciones
+                                           de trabajo HTML5-->
+
+            <select>    <!--La forma más básica de crear una lista desplegable de elementos se compone de una
+                        etiqueta contenedora <select> que en su interior incluirá varias etiquetas <option>,
+                        una por cada opción posible a elegir por parte del usuario-->
+
+                <option disabled selected>-PERSONAJES DE DRAGON BALL-</option>   <!--Esto crea una frase o palabra predeterminada
+                                                                        en la cassila del <select>, la cual se va a ver
+                                                                        lo que contenga, pero al desplegarse se verá
+                                                                        difuminado.-->
+                <optgroup label="Padres">   <!--Esto genera una categoria dentro del selector, y se incluyen 
+                                            los <options> que incluyas entre las dos etiquetas de <optgroup> -->
+                <option value="goku">Goku</option>
+                <option value="vegeta">Vegeta</option>
+                </optgroup>
+                <hr />  <!--Con esto podemos separar con una linea orizontal dentro de la selección-->
+                <optgroup label="Hijos">
+                <option value="gohan">Gohan</option>
+                <option value="trunks">Trunks</option>    <!--El atributo value tiene el valor interno de la opción,
+                                                        mientras que el contenido de la etiqueta <option> es lo que
+                                                        el usuario observará visualmente en el formulario.-->
+                </optgroup>
+            </select>
+
+            <fieldset>      <!-- <fieldset> agrupa por rectangulos los <input> de su interior-->
+                Nombre de Usuario:
+                <input placeholder="Por ej: Dani Paez" />
+
+                Edad:
+                <input type="number" min="18" placeholder=">18">
+            
+            </fieldset>           
+        <hr/>
+            <fieldset>
+            <legend>Datos Personales:</legend>  <!-- Le puedes añadir leyendas o titulos simples a estas agrupaciones
+                                                con <legend>, y queda de forma entrecortada con el cuadro de linea-->
+                Nombre de Usuario:
+                <input placeholder="Por ej: Dani Paez" />
+
+                Edad:
+                <input type="number" min="18" placeholder=">18">   <!-- Poniendo un <input type="number" min="18"> 
+                                                                   haces que en el selector de edad, siemore el
+                                                                   minimo sea el numero puesto en min-->         
+            </fieldset>
+            <fieldset>
+                 <legend>Datos fiscales:</legend>
+                 <input type="radio" name="userdata" value="user"> Particular
+                 <input type="radio" name="userdata" value="business"> Empresa/Autónomo
+            </fieldset>
+
+
+        </form>
+
+
+    </body>
+
+</html>

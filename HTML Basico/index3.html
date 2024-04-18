@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imagenes, Links, Listas y Tablas en HTML5</title>
+    </head>
+    <body>
+
+        <h1><a href="index.html"><img src="img/Banner ADORAI.jpg" alt="Banner ADORAI" width="200" height="50"></a></h1>
+
+
+        <img src="img/ADORAI.png" alt="Logo ADORAI" width="200" height="200"/>
+        <!--En al etiqueta de imagen se encuentras varios atributos, dos de ellos 
+        obligatorios: src="" --que nos indica la ruta de donde proyectaremos la imagen
+        y el atributo alt=""--que nos indicaria un nombre o una descripcion en caso de 
+        que la imagen no pueda ser mostrada en pantalla. Los otros dos atributos son 
+        width="" y heigth="" que nos permiten indicar el ancho y el alto de la imagen-->
+
+        <p>Ir a <a href="https://www.google.es" target="_blank">google</a></p>
+
+        <fieldset>
+            <legend>LISTA NO ENUMERADA:</legend>
+            <ul>
+                <li>Lista no enumerada 1</li>
+                <li>Lista no enumerada 2</li>
+                <li>Lista no enumerada 3</li>
+                <li>Lista no enumerada 4</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>LISTA ENUMERADA:</legend>
+            <ol>
+                <li>Lista enumerada 1</li>
+                <li>Lista enumerada 2</li>
+                <li>Lista enumerada 3</li>
+                <li>Lista enumerada 4</li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>LISTA ENUMERADA INVERSA Y CON INICIO:</legend>
+            <ol start="30" reversed>
+                <li>Lista enumerada 1</li>
+                <li>Lista enumerada 2</li>
+                <li>Lista enumerada 3</li>
+                <li>Lista enumerada 4</li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>LISTA ENUMERADA ROMANA:</legend>
+            <ol type="I">
+                <li value="20">Lista enumerada romana 1</li>
+                <li value="12">Lista enumerada romana 2</li>
+                    <fieldset>
+                        <legend>Lista dentro de lista</legend>
+                        <ol type="i">
+                            <li>Lista enumerada romanana pequena 1</li>
+                            <li>Lista enumerada romanana pequena 2</li>
+                            <li>Lista enumerada romanana pequena 3</li>
+                            <li>Lista enumerada romanana pequena 4</li>
+                        </ol>
+                    </fieldset>
+                <li value="45">Lista enumerada romana 3</li>
+                <li value="52">Lista enumerada romana 4</li>
+            </ol>
+        </fieldset>
+
+<br><br><br><br><br><br>
+
+
+       <table>
+            
+            <tr> <!-- Fila de la cabecera -->
+                <th>Gatos</th> <!-- Celda cabecera de la columna 1 -->
+                <th>Perros</th> <!-- Celda cabecera de la columna 2 -->
+                <th>Conejos</th> <!-- Celda cabecera de la columna 3 -->
+            </tr>
+            
+            <tr> <!-- Primera fila -->
+                <td>Garfield</td> <!-- Primera columna de la primera fila -->
+                <td>Bodeguero</td> <!-- Segunda columna de la primera fila -->
+                <td>Callejero</td> <!-- Tercera columna de la primera fila -->
+            </tr>
+           
+            <tr>  <!-- Segunda fila -->
+                <td>Persa</td> <!-- Primera columna de la segunda fila -->
+                <td>Galgo</td> <!-- Segunda columna de la segunda fila -->
+                <td>Enjaulado</td> <!-- Tercera columna de la segunda fila -->
+            </tr>
+            <tr>  <!-- Tercera fila -->
+                <td>Siames</td> <!-- Primera columna de la Tercera fila -->
+                <td>Boxer</td> <!-- Segunda columna de la Tercera fila -->
+                <td>Comida</td> <!-- Tercera columna de la Tercera fila -->
+            </tr>
+        </table>
+
+
+    </body>
+</html>
